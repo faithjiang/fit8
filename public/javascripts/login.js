@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  $('.header').height($(window).height());
+})
+
 function get_password(){
   var password=document.getElementById("password_input").value;
   alert(password);
@@ -10,7 +14,7 @@ function login(){
   let password=document.getElementById("password_input").value;
   let email=document.getElementById("email_input").value;
   let post_body = {
-    'username': email,
+    'email': email,
     'password': password
   }
   xhttp.send(JSON.stringify(post_body));
