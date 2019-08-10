@@ -8,12 +8,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
+}
+
+i {
+  color: #5a6175;
+  margin-left: -50px;
 }
 
 .login-container {
   width:100%;
   height: 90%;
+  min-height: 700px;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -47,6 +52,11 @@ body {
   color: #FFA500;
 }
 
+.form-a:hover {
+  border-bottom: 1px;
+  color: #FFA500;
+}
+
 .form-signin {
   background-color: white;
   height: 85%;
@@ -73,8 +83,15 @@ body {
   font-family: 'Apercu Regular';
 }
 
-.form-group .form-control{
+.form-group .form-control {
   height: 48px;
+  padding: 0px;
+}
+
+.form-group .password {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .form-group .form-control::placeholder{
@@ -106,19 +123,26 @@ body {
   color: #B2B2B2;
 }
 
-.main-button {
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+  border-width: 1.5px;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  background-color: #5a6175;
+  border-color: #5a6175;
+}
+
+.checkbox {
+  padding: 0px;
+}
+
+.btn-primary {
   background-color: #585872;
 }
 
-.facebook-button {
+.btn-facebook {
   background-color: #528FD3;
-}
-
-#check_remember {
-  border-style: solid;
-  background-color: red;
-  border-width: 1px;
-  border-radius: 3px;
 }
 
 #email_input {
@@ -145,4 +169,8 @@ body {
   text-transform: uppercase;
   font-size: 0.8em;
   color: #B2B2B2;
+}
+
+#forgot_password a:hover {
+  color: #FFA500;
 }

@@ -19,3 +19,10 @@ function login(){
   }
   xhttp.send(JSON.stringify(post_body));
 }
+
+let password_div = document.getElementById("password_input");
+console.log(password_div)
+password_div.addEventListener("mouseover", function(event){
+  let eye_slash_icon= document.getElementsByClassName("far fa-eye-slash fa-2x");
+  eye_slash_icon[0].style.display = "block";
+});
