@@ -10,7 +10,7 @@ router.post('/', function(req, res, next) {
   console.log("email: " + req.body.email)
   users.findOne({ "email": req.body.email}, function(err, queried_user){
     let error = new Error("Login Failed");
-    res.status(203);
+    res.status(403);
     if(err){return res.json(error)};
     if(queried_user == null){return res.json(error)};
     if(queried_user.password != req.body.password){return res.json(error)};
