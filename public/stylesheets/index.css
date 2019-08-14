@@ -10,10 +10,10 @@ body {
   align-items: center;
 }
 
-i {
+/* i {
   color: #5a6175;
   margin-left: -50px;
-}
+} */
 
 .login-container {
   width:100%;
@@ -144,6 +144,7 @@ i {
 .btn-facebook {
   background-color: #528FD3;
 }
+
 
 #email_input {
   border-style: solid;

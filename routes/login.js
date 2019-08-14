@@ -7,10 +7,10 @@ var users = require('../models/users');
 var sessions = require('../models/sessions');
 
 router.post('/', function(req, res, next) {
-  console.log("User: " + req.body.username)
-  users.findOne({ "username": req.body.username}, function(err, queried_user){
+  console.log("email: " + req.body.email)
+  users.findOne({ "email": req.body.email}, function(err, queried_user){
     let error = new Error("Login Failed");
-    res.status(401);
+    res.status(203);
     if(err){return res.json(error)};
     if(queried_user == null){return res.json(error)};
     if(queried_user.password != req.body.password){return res.json(error)};

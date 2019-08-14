@@ -6,7 +6,7 @@ var Session = require('../objects/session');
 var users = require('../models/users');
 var sessions = require('../models/sessions');
 
-router.delete('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
   var session = req.cookies.sessionID;
   res.clearCookie('sessionID');
 
