@@ -15,7 +15,7 @@ i {
   margin-left: -50px;
 }
 
-.login-container {
+#root {
   width:100%;
   height: 90%;
   min-height: 700px;
@@ -57,7 +57,7 @@ i {
   color: #FFA500;
 }
 
-.form-signin {
+.Login {
   background-color: white;
   height: 85%;
   width: 30%;
